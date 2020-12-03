@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  IPC
+//  Listener
 //
 //  Created by Juan Ramirez on 12/3/20.
 //
@@ -9,6 +9,6 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    std::cout << "Waiting for you to say something...\n";
     return 0;
 }

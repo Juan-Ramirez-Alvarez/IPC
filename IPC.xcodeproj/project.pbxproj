@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AA03B9C22578E2EB00534E61 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA03B9C12578E2EB00534E61 /* main.cpp */; };
+		AA03B9D02578E31E00534E61 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA03B9CF2578E31E00534E61 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,15 +21,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		AA03B9CB2578E31E00534E61 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AA03B9BE2578E2EB00534E61 /* IPC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = IPC; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA03B9BE2578E2EB00534E61 /* Talker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Talker; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA03B9C12578E2EB00534E61 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AA03B9CD2578E31E00534E61 /* Listener */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Listener; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA03B9CF2578E31E00534E61 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AA03B9BB2578E2EB00534E61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA03B9CA2578E31E00534E61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +60,8 @@
 		AA03B9B52578E2EB00534E61 = {
 			isa = PBXGroup;
 			children = (
-				AA03B9C02578E2EB00534E61 /* IPC */,
+				AA03B9C02578E2EB00534E61 /* Talker */,
+				AA03B9CE2578E31E00534E61 /* Listener */,
 				AA03B9BF2578E2EB00534E61 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +69,34 @@
 		AA03B9BF2578E2EB00534E61 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA03B9BE2578E2EB00534E61 /* IPC */,
+				AA03B9BE2578E2EB00534E61 /* Talker */,
+				AA03B9CD2578E31E00534E61 /* Listener */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AA03B9C02578E2EB00534E61 /* IPC */ = {
+		AA03B9C02578E2EB00534E61 /* Talker */ = {
 			isa = PBXGroup;
 			children = (
 				AA03B9C12578E2EB00534E61 /* main.cpp */,
 			);
-			path = IPC;
+			path = Talker;
+			sourceTree = "<group>";
+		};
+		AA03B9CE2578E31E00534E61 /* Listener */ = {
+			isa = PBXGroup;
+			children = (
+				AA03B9CF2578E31E00534E61 /* main.cpp */,
+			);
+			path = Listener;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AA03B9BD2578E2EB00534E61 /* IPC */ = {
+		AA03B9BD2578E2EB00534E61 /* Talker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA03B9C52578E2EB00534E61 /* Build configuration list for PBXNativeTarget "IPC" */;
+			buildConfigurationList = AA03B9C52578E2EB00534E61 /* Build configuration list for PBXNativeTarget "Talker" */;
 			buildPhases = (
 				AA03B9BA2578E2EB00534E61 /* Sources */,
 				AA03B9BB2578E2EB00534E61 /* Frameworks */,
@@ -77,9 +106,26 @@
 			);
 			dependencies = (
 			);
-			name = IPC;
+			name = Talker;
 			productName = IPC;
-			productReference = AA03B9BE2578E2EB00534E61 /* IPC */;
+			productReference = AA03B9BE2578E2EB00534E61 /* Talker */;
+			productType = "com.apple.product-type.tool";
+		};
+		AA03B9CC2578E31E00534E61 /* Listener */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA03B9D12578E31E00534E61 /* Build configuration list for PBXNativeTarget "Listener" */;
+			buildPhases = (
+				AA03B9C92578E31E00534E61 /* Sources */,
+				AA03B9CA2578E31E00534E61 /* Frameworks */,
+				AA03B9CB2578E31E00534E61 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Listener;
+			productName = Listener;
+			productReference = AA03B9CD2578E31E00534E61 /* Listener */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -91,6 +137,9 @@
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					AA03B9BD2578E2EB00534E61 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					AA03B9CC2578E31E00534E61 = {
 						CreatedOnToolsVersion = 12.2;
 					};
 				};
@@ -108,7 +157,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA03B9BD2578E2EB00534E61 /* IPC */,
+				AA03B9BD2578E2EB00534E61 /* Talker */,
+				AA03B9CC2578E31E00534E61 /* Listener */,
 			);
 		};
 /* End PBXProject section */
@@ -119,6 +169,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA03B9C22578E2EB00534E61 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA03B9C92578E31E00534E61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA03B9D02578E31E00534E61 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +310,22 @@
 			};
 			name = Release;
 		};
+		AA03B9D22578E31E00534E61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AA03B9D32578E31E00534E61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -264,11 +338,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA03B9C52578E2EB00534E61 /* Build configuration list for PBXNativeTarget "IPC" */ = {
+		AA03B9C52578E2EB00534E61 /* Build configuration list for PBXNativeTarget "Talker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA03B9C62578E2EB00534E61 /* Debug */,
 				AA03B9C72578E2EB00534E61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA03B9D12578E31E00534E61 /* Build configuration list for PBXNativeTarget "Listener" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA03B9D22578E31E00534E61 /* Debug */,
+				AA03B9D32578E31E00534E61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
