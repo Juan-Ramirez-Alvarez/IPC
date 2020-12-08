@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/juanramirez/Documents/IPC/globals.hpp">
+   </FileRef>
+   <FileRef
+      location = "group:../shmfile_juan">
+   </FileRef>
+   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>

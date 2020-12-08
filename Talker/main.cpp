@@ -22,7 +22,7 @@ int main(int argc, const char * argv[]) {
 
 
     // 2. Get shared memory identifier
-    int shared_mem_id = shmget(key, SHARED_MEM_SIZE, IPC_CREAT | Orw_Grw_Orw);
+    int shared_mem_id = shmget(key, SHARED_MEM_SIZE, IPC_CREAT | rw_rw_rw);
     if (shared_mem_id < 0) {
         std::cout << "Error getting shared memory id" << std::endl;
         return -1;

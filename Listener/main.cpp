@@ -20,7 +20,7 @@ int main(int argc, const char * argv[]) {
     }
 
     // 2. Get shared mem identifier
-    int shared_mem_id = shmget(key, SHARED_MEM_SIZE, IPC_CREAT | Orw_Grw_Orw);
+    int shared_mem_id = shmget(key, SHARED_MEM_SIZE, IPC_CREAT | rw_rw_rw);
     if (shared_mem_id < 0) {
         std::cout << "Error getting shared memory id" << std::endl;
         return -1;
@@ -37,6 +37,7 @@ int main(int argc, const char * argv[]) {
 
     // 4. Detach from shared memory
     shmdt(str);
+    shmctl(shared_mem_id, IPC_RMID, NULL);
 
     return 0;
 }
