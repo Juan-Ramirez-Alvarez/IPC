@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../SharedMemory/SharedMemory.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:../SharedMemory/SharedMemory.hpp">
+   </FileRef>
+   <FileRef
+      location = "group:../shmfile_juan">
+   </FileRef>
+   <FileRef
       location = "group:/Users/juanramirez/Documents/IPC/globals.hpp">
    </FileRef>
    <FileRef

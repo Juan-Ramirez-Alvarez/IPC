@@ -10,7 +10,6 @@
 
 #define FILEPATH "/Users/juanramirez/Documents/IPC/shmfile_juan"
 #define PROJ_ID 18
-#define rw_rw_rw 0666
 #define SHARED_MEM_SIZE 1024
 
 #endif /* globals_h */
