@@ -9,7 +9,6 @@
 #include <sys/ipc.h>
 #include <sys/shm.h>
 #include <stdio.h>
-#include <sstream>
 
 #define rw_rw_rw 0666
 

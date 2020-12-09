@@ -5,10 +5,6 @@
 //  Created by Juan Ramirez on 12/3/20.
 //
 
-//#include <iostream>
-#include <sys/ipc.h>
-#include <sys/shm.h>
-#include <stdio.h>
 #include "globals.hpp"
 #include "SharedMemory.hpp"
 
